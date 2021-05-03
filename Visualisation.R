@@ -37,7 +37,7 @@ result_C$C_base <- as.factor(result_C$C_base)
 q <- ggplot(aes(x = C_base, y = C_cost, color = solution), data = result_C) + geom_point(shape = 15)
 q <- q + theme_bw() + xlab("C Base") + ylab("C Cost ($)")
 q <- q + scale_color_manual(values = c("orange", "blue", "lightblue"))
-q <- q +  geom_hline(yintercept = 3000, color = "red") + geom_vline(xintercept = 2, color = "red")
+q <- q +  geom_hline(yintercept = 3000, color = "red") + geom_vline(xintercept = 3, color = "red")
 q <- q + labs(color = "Options Selected") + labs(title="Sensitivity to C Base and C Cost") 
 q
 
